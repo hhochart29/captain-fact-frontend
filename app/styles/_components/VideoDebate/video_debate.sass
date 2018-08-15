@@ -22,10 +22,15 @@
 
   &> .tabs
     margin-bottom: 0
+    ul
+      flex-wrap: wrap
+      max-width: 100%
     a
       border-radius: 0
-    li:last-child a
-      border-right: none
+    li
+      flex-basis: 150px
+      &:last-child a
+        border-right: none
 
   .video > div
     position: relative
